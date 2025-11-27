@@ -3,7 +3,7 @@ import { AlertCircle, CheckCircle, Zap, Eye, Shield, Code, FileText, Activity } 
 
 const App = () => {
   const [activeTab, setActiveTab] = useState('architecture');
-  const [selectedLayer, setSelectedLayer] = useState(null);
+  const [selectedLayer, setSelectedLayer] = useState<number | null>(null);
   const [analysisStep, setAnalysisStep] = useState(0);
   const [showVulnerability, setShowVulnerability] = useState(false);
 
